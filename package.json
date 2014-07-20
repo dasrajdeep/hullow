@@ -2,6 +2,11 @@
   "name": "hullow",
   "version": "0.0.1",
   "private": true,
+  "author": {
+    "name": "Rajdeep Das",
+    "email": "rajdeepd@iitk.ac.in",
+    "url": "http://cse.iitk.ac.in/users/rajdeepd"
+  },
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -13,5 +18,10 @@
     "body-parser": "~1.0.0",
     "debug": "~0.7.4",
     "jade": "~1.3.0"
-  }
+  },
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "main": "app.js"
 }
