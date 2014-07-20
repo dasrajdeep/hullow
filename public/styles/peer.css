@@ -1,0 +1,53 @@
+body {
+	overflow: hidden;
+}
+
+video {
+	width: 100%;
+}
+
+.col-md-10, .collage {
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.panel{
+    background-color: #EEEEEE;
+}
+
+.username {
+	font-weight: bolder;
+}
+
+input:invalid, input:focus:invalid {
+	background-color: #FCFAF0;
+}
+
+#sidebar {
+	border-left: solid;
+	border-left-color: #CCCCCC;
+}
+
+#vid {
+	position: absolute;
+	cursor: move;
+	overflow: hidden;
+	z-index: 999;
+	height : 300px;
+	width : 300px;
+	border-radius : 150px;
+	border : solid;
+	border-color : #CCCCCC;
+}
+
+#pic {
+	position: relative;
+	left: 135px;
+	z-index: 1999;
+}
+
+#pad {
+	background-color: #EEEEEE;
+}

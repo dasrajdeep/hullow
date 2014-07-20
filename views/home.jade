@@ -1,0 +1,29 @@
+div.col-md-10#pad
+	div#vid
+		video.grayscale
+		a(href='#')#pic
+			span.glyphicon.glyphicon-camera(style='font-size:30px;')
+				
+canvas(style='display:none')
+
+div.col-md-2#sidebar
+	h2(style='color:#3C763D') 
+		span Who's there?
+		br
+		small knock knock!
+	hr
+	div.list-group
+
+include incoming
++dialog('Incoming Call', 'incoming')
+	div.modal-body
+		h1
+			span#caller
+			span  is calling you...
+	div.modal-footer
+		button.btn.btn-success#answer
+			span.glyphicon.glyphicon-earphone
+			span  Answer
+		button.btn.btn-danger#reject
+			span.glyphicon.glyphicon-phone-alt
+			span  Reject

@@ -1,0 +1,8 @@
+mixin dialog(title, id)
+	div.modal.fade(id=id)
+		div.modal-dialog
+			div.modal-content
+				div.modal-header
+					h4.modal-title   
+						span=title
+				block
