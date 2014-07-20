@@ -112,7 +112,6 @@ var App = function() {
         self.app.set('views', path.join(__dirname, 'views'));
         self.app.set('view engine', 'jade');
 
-        self.app.use(favicon());
         self.app.use(logger('dev'));
         self.app.use(bodyParser.json());
         self.app.use(bodyParser.urlencoded());
