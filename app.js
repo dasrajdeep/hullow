@@ -4,9 +4,17 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var cors = require('cors');
 
 var p2p = require('./app/peertopeer');
 var routes = require('./routes/index')();
+
+var allowCORS = function(req, res, next) {
+	res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+    next();
+};
 
 var app = express();
 
@@ -19,6 +27,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
+//app.use(cors);
+app.use(allowCORS);
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
