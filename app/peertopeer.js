@@ -1,10 +1,10 @@
 var PeerServer = require('peer').PeerServer;
-var server = new PeerServer({port: 9000, path: '/'});
-var io = require('socket.io').listen(85);
+//var server = new PeerServer({port: 9000, path: '/'});
+//var io = require('socket.io').listen(85);
 
 var connected = {};
 
-io.on('connection', function(socket) {
+/*io.on('connection', function(socket) {
 	console.log('socket.io client connected.');
 	socket.emit('roster', connected);
 	socket.on('register', function(data) {
@@ -21,6 +21,6 @@ server.on('disconnect', function(id) {
 	delete connected[id];
 	io.emit('leave', id);
     console.log('client disconnected with ID: ' + id);
-});
+});*/
 
 module.exports = {};
