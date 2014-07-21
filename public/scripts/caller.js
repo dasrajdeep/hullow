@@ -22,7 +22,7 @@ define(['socketio', 'modernizr', 'peerjs', 'headtrackr'], function(io) {
     
     var init = function(roster_add, roster_remove) {
     	
-    	socket = io.connect('http://' + window.location.host + ':85');
+    	socket = io.connect('http://' + window.location.host + ':5000');
         
     	socket.on('connect', function() {
     		socket.emit('register', me);
