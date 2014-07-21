@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var p2p = require('./app/peertopeer');
-var routes = require('./routes/index')(p2p);
+var routes = require('./routes/index')();
 
 var app = express();
 

@@ -1,5 +1,5 @@
 var PeerServer = require('peer').PeerServer;
-//var server = new PeerServer({port: 9000, path: '/'});
+var server = new PeerServer({port: 9000, path: '/'});
 //var io = require('socket.io').listen(85);
 
 var connected = {};
